@@ -1,0 +1,7 @@
+
+#Subindo o server
+$npm start
+
+
+#Subindo o client
+npm run watch
