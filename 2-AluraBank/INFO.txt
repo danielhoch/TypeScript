@@ -1,0 +1,49 @@
+
+#Instalando TypeScript
+$npm init
+$npm install typescript@2.3.2 --save-dev
+
+#Instalando types => de para de jquey
+$npm install @types/jquery@2.0.42 --save -dev
+
+$npm start
+
+
+Bibliotecas como Lodash, Underscore, inclusive plugins do jQuery UI possuem seu respectivo arquivo tsd.
+Um repositório do git que centraliza algumas desses arquivo é https://github.com/DefinitelyTyped/DefinitelyTyped.
+
+No npm, existe uma série de TypeScript definitons files para as mais diversas bibliotecas e frameworks do mercado. 
+Por exemplo, se quisermos instalar o tsd do jQuery, acessamos
+
+https://www.npmjs.com/package/@types/jquery
+
+Se quisermos do lodash ou underscore acessamos
+
+https://www.npmjs.com/package/@types/lodash
+
+https://www.npmjs.com/package/@types/underscore
+Dessa forma, antes de sair buscando pela internet os arquivos tsd que precisamos, podemos tentar a sorte executando o comando:
+
+npm install @types/nomeDaLibOuFramework --save-dev
+Nesse sentido, se quisermos instalar os tsd das três bibliotecas que foram citadas, fazemos:
+
+npm install @types/jquery --save-dev
+npm install @types/loadash --save-dev
+npm install @types/underscore --save-dev
+Qualquer tsd files que esteja dentro de node_modules/@types será lidado automaticamente pelo compilador do TypeScript.
+
+É preciso se conformar quando não houver do Typing para sua biblioteca preferida, neste caso, a estratégia do declare 
+var que vimos neste treinamento é uma saída, não muito ideal, mas que permitirá seu código compilar até que você 
+encontre seu tsd.
+
+
+
+#Instalando server
+$npm install lite-server@2.3.0 --save-dev
+
+#Instalando concurrently para executar o lite-server e o compilador em tempo real do TypeScript
+Ele nos permitirá rodar os dois scripts que criamos em paralelo
+$npm install concurrently@3.4.0 --save-dev
+
+#Instalado definições dos modulos do node.js
+$npm install @types/node --save-dev
